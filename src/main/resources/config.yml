@@ -1,0 +1,117 @@
+min-players: 2
+
+countdown-seconds: 15
+
+lobby-spawn:
+  world-name: world
+  x: 0
+  y: 116
+  z: 0
+  yaw: -180
+  pitch: 0
+arenas:
+  1:
+    game: gladiators
+    sign-location:
+      world-name: world
+      x: -2
+      y: 118
+      z: -11
+      facing: south
+    spawn-location:
+      world-name: world
+      x: -10
+      y: 126
+      z: -23
+      yaw: 0
+      pitch: 0
+  2:
+    game: block-muncher
+    sign-location:
+      world-name: world
+      x: 2
+      y: 118
+      z: -11
+      facing: south
+    spawn-location:
+      world-name: world
+      x: 10
+      y: 126
+      z: -23
+      yaw: 0
+      pitch: 0
+  3:
+    game: one-in-the-chamber
+    sign-location:
+      world-name: world
+      x: 11
+      y: 118
+      z: -2
+      facing: west
+    spawn-location:
+      world-name: world
+      x: 25
+      y: 126
+      z: -8
+      yaw: 90
+      pitch: 0
+  4:
+    game: slime-shooter
+    sign-location:
+      world-name: world
+      x: 11
+      y: 118
+      z: 2
+      facing: west
+    spawn-location:
+      world-name: world
+      x: 25
+      y: 126
+      z: 12
+      yaw: 90
+      pitch: 0
+  5:
+    game: avoid-the-rain
+    sign-location:
+      world-name: world
+      x: 11
+      y: 118
+      z: 6
+      facing: west
+    spawn-location:
+      world-name: world
+      x: 10
+      y: 123
+      z: 27
+      yaw: 180
+      pitch: 0
+  6:
+    game: cactus-castle
+    sign-location:
+      world-name: world
+      x: -11
+      y: 118
+      z: 2
+      facing: east
+    spawn-location:
+      world-name: world
+      x: -24
+      y: 127
+      z: 12
+      yaw: -90
+      pitch: 0
+  7:
+    game: king-of-the-hill
+    sign-location:
+      world-name: world
+      x: -11
+      y: 118
+      z: -2
+      facing: east
+    spawn-location:
+      world-name: world
+      x: -25
+      y: 127
+      z: -8
+      yaw: -90
+      pitch: 0
