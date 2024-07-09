@@ -3,5 +3,5 @@ version: "${project.version}"
 main: net.slqmy.block_warriors.BlockWarriors
 api-version: "1.20"
 prefix: Block-Warriors
-author: slqmy
+author: Slqmy
 description: A collection of fun minigames all running on one central system.
