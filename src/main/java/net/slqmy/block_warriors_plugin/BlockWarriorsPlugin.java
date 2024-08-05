@@ -1,6 +1,7 @@
 package net.slqmy.block_warriors_plugin;
 
 import org.bukkit.Bukkit;
+import org.bukkit.NamespacedKey;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Projectile;
 import org.bukkit.entity.Slime;
@@ -20,6 +21,10 @@ import java.util.UUID;
 
 public final class BlockWarriorsPlugin extends JavaPlugin {
 	private ArenaManager arenaManager;
+
+	private NamespacedKey teamNameKey = new NamespacedKey(this, "team_name");
+
+	private NamespacedKey kitNameKey = new NamespacedKey(this, "kit_name");
 
 	@Override
 	public void onEnable() {
@@ -65,5 +70,13 @@ public final class BlockWarriorsPlugin extends JavaPlugin {
 
 	public ArenaManager getArenaManager() {
 		return arenaManager;
+	}
+
+	public NamespacedKey getTeamNameKey() {
+		return teamNameKey;
+	}
+
+	public NamespacedKey getKitNameKey() {
+		return kitNameKey;
 	}
 }

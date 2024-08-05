@@ -17,6 +17,7 @@ import org.bukkit.inventory.EquipmentSlot;
 import org.bukkit.inventory.InventoryView;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.persistence.PersistentDataType;
 import org.jetbrains.annotations.NotNull;
 
 import net.slqmy.block_warriors_plugin.BlockWarriorsPlugin;
@@ -84,7 +85,7 @@ public final class GameListener implements Listener {
 			final ItemMeta meta = clickedItem.getItemMeta();
 			assert meta != null;
 
-			final KitType kit = KitType.valueOf(meta.getLocalizedName());
+			final KitType kit = KitType.valueOf(meta.getPersistentDataContainer().get(plugin.getKitNameKey(), PersistentDataType.STRING));
 
 			if (kit.equals(arena.getKit(player))) {
 				player.sendMessage(ChatColor.RED + "You already have the " + kit.getName() + ChatColor.RED + " kit selected!");
@@ -109,7 +110,7 @@ public final class GameListener implements Listener {
 			final ItemMeta meta = clickedItem.getItemMeta();
 			assert meta != null;
 
-			final Team team = Team.valueOf(meta.getLocalizedName());
+			final Team team = Team.valueOf(meta.getPersistentDataContainer().get(plugin.getTeamNameKey(), PersistentDataType.STRING));
 
 			if (arena.getTeam(player) == team) {
 				player.sendMessage(ChatColor.RED + "You are already on team " + team.getDisplayName() + ChatColor.RED + "!");

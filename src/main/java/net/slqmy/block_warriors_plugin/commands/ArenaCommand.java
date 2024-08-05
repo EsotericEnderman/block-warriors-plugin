@@ -75,7 +75,7 @@ public final class ArenaCommand extends AbstractCommand {
 					return true;
 				}
 
-				new KitSelectionGUI(arena, player);
+				new KitSelectionGUI(plugin, arena, player);
 			} else if ("teams".equalsIgnoreCase(args[0])) {
 				final Arena arena = arenaManager.getArena(player);
 
@@ -89,7 +89,7 @@ public final class ArenaCommand extends AbstractCommand {
 					return true;
 				}
 
-				new TeamSelectionGUI(arena, player);
+				new TeamSelectionGUI(plugin, arena, player);
 			} else {
 				return false;
 			}

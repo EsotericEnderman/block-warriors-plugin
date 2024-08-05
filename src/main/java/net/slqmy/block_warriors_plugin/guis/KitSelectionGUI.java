@@ -6,15 +6,18 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.persistence.PersistentDataContainer;
+import org.bukkit.persistence.PersistentDataType;
 import org.jetbrains.annotations.NotNull;
 
+import net.slqmy.block_warriors_plugin.BlockWarriorsPlugin;
 import net.slqmy.block_warriors_plugin.enums.KitType;
 import net.slqmy.block_warriors_plugin.types.Arena;
 
 import java.util.List;
 
 public final class KitSelectionGUI {
-	public KitSelectionGUI(@NotNull final Arena arena, @NotNull final Player player) {
+	public KitSelectionGUI(@NotNull final BlockWarriorsPlugin plugin, @NotNull final Arena arena, @NotNull final Player player) {
 		final Inventory inventory = Bukkit.createInventory(null, 9, ChatColor.GOLD + "Kit Selection");
 
 		final List<KitType> gameKits = arena.getGame().getKits();
@@ -25,7 +28,8 @@ public final class KitSelectionGUI {
 
 				final ItemMeta meta = icon.getItemMeta();
 				assert meta != null;
-				meta.setLocalizedName(kit.name());
+				PersistentDataContainer dataContainer = meta.getPersistentDataContainer();
+				dataContainer.set(plugin.getKitNameKey(), PersistentDataType.STRING, kit.name());
 
 				icon.setItemMeta(meta);
 
