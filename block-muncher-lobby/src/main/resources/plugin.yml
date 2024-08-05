@@ -1,7 +1,0 @@
-name: Block-Muncher-Lobby
-version: '${project.version}'
-main: net.slqmy.block_muncher.BlockMuncherLobby
-api-version: '1.20'
-prefix: Block-Muncher-Lobby
-author: slqmy
-description: A lobby system to support joining Block Muncher games.
