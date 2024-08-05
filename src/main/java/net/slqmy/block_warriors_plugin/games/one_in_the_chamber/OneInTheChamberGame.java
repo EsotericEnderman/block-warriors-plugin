@@ -20,6 +20,7 @@ import org.bukkit.inventory.PlayerInventory;
 import org.bukkit.projectiles.ProjectileSource;
 import org.jetbrains.annotations.NotNull;
 
+import net.kyori.adventure.text.Component;
 import net.slqmy.block_warriors_plugin.BlockWarriorsPlugin;
 import net.slqmy.block_warriors_plugin.enums.GameState;
 import net.slqmy.block_warriors_plugin.enums.Team;
@@ -150,15 +151,12 @@ public final class OneInTheChamberGame extends AbstractGame {
 				}, 1);
 
 				onPlayerDeath(
-								new PlayerDeathEvent(
-												hitPlayer,
-												Arrays.stream(hitPlayer.getInventory().getContents()).toList(),
-												0,
-												arena.getTeam(hitPlayer).getDisplayName() + ChatColor.GRAY + " "
-																+ hitPlayer.getName() + " was killed by " + arena.getTeam(attackingPlayer).getDisplayName()
-																+ attackingPlayer.getName() + ChatColor.GRAY + "!"
-								)
-				);
+						new PlayerDeathEvent(hitPlayer, hitPlayer.getLastDamageCause().getDamageSource(),
+								Arrays.stream(hitPlayer.getInventory().getContents()).toList(), 0, 0,
+								Component.text(arena.getTeam(hitPlayer).getDisplayName() + ChatColor.GRAY + " "
+										+ hitPlayer.getName() + " was killed by "
+										+ arena.getTeam(attackingPlayer).getDisplayName()
+										+ attackingPlayer.getName() + ChatColor.GRAY + "!")));
 
 				projectile.remove();
 			} else {

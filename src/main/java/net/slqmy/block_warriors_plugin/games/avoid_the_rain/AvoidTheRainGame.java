@@ -75,13 +75,13 @@ public final class AvoidTheRainGame extends AbstractGame {
 												EntityType.EGG,
 												EntityType.ENDER_PEARL,
 												EntityType.FIREBALL,
-												EntityType.FIREWORK,
-												EntityType.SPLASH_POTION,
+												EntityType.FIREWORK_ROCKET,
+												EntityType.POTION,
 												EntityType.LLAMA_SPIT,
 												EntityType.SHULKER_BULLET,
 												EntityType.SNOWBALL,
 												EntityType.SPECTRAL_ARROW,
-												EntityType.THROWN_EXP_BOTTLE,
+												EntityType.EXPERIENCE_BOTTLE,
 												EntityType.TRIDENT
 								);
 

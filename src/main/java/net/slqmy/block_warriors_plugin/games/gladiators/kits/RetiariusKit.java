@@ -26,13 +26,13 @@ public final class RetiariusKit extends AbstractKit {
 	public void activateKit(@NotNull final Player player) {
 		player.addPotionEffect(
 						new PotionEffect(
-										PotionEffectType.INCREASE_DAMAGE, 60, 0, true, true, true
+										PotionEffectType.STRENGTH, 60, 0, true, true, true
 						)
 		);
 
 		player.addPotionEffect(
 						new PotionEffect(
-										PotionEffectType.SLOW, 200, 1, true, true, true
+										PotionEffectType.SLOWNESS, 200, 1, true, true, true
 						)
 		);
 	}

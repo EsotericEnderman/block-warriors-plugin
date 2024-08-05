@@ -21,7 +21,7 @@ public final class VoleKit extends AbstractKit {
 
 	@Override
 	public void activateKit(@NotNull final Player player) {
-		player.addPotionEffect(new PotionEffect(PotionEffectType.FAST_DIGGING, 250, 0, true, true, true));
+		player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 250, 0, true, true, true));
 	}
 
 	@Override
