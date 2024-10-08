@@ -37,10 +37,10 @@ fun pascalcase(kebabcaseString: String): String {
 
 description = "A collection of fun minigames."
 
-val mainProjectAuthor = "Slqmy"
+val mainProjectAuthor = "Esoteric Enderman"
 val projectAuthors = listOfNotNull(mainProjectAuthor)
 
-val topLevelDomain = "net"
+val topLevelDomain = "dev"
 
 group = topLevelDomain + groupStringSeparator + mainProjectAuthor.lowercase() + groupStringSeparator + snakecase(rootProject.name)
 version = "1.0.0-SNAPSHOT"
