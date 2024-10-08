@@ -35,7 +35,7 @@ fun pascalcase(kebabcaseString: String): String {
   return pascalCaseString
 }
 
-description = "A collection of fun minigames."
+description = "A collection of fun Minecraft minigames."
 
 val mainProjectAuthor = "Esoteric Enderman"
 val projectAuthors = listOfNotNull(mainProjectAuthor)

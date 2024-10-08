@@ -1,3 +1,3 @@
 # Block Warriors Plugin
 
-> A collection of fun minigames.
+> A collection of fun Minecraft minigames.
