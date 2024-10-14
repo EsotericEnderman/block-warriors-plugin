@@ -9,10 +9,10 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import dev.enderman.minecraft.plugins.blockwarriors.commands.ArenaCommand;
-import dev.enderman.minecraft.plugins.blockwarriors.events.listeners.ConnectionListener;
-import dev.enderman.minecraft.plugins.blockwarriors.events.listeners.GameListener;
-import dev.enderman.minecraft.plugins.blockwarriors.games.avoid_the_rain.AvoidTheRainGame;
-import dev.enderman.minecraft.plugins.blockwarriors.games.slime_shooter.SlimeShooterGame;
+import dev.enderman.minecraft.plugins.blockwarriors.event.listeners.ConnectionListener;
+import dev.enderman.minecraft.plugins.blockwarriors.event.listeners.GameListener;
+import dev.enderman.minecraft.plugins.blockwarriors.games.avoidtherain.AvoidTheRainGame;
+import dev.enderman.minecraft.plugins.blockwarriors.games.slimeshooter.SlimeShooterGame;
 import dev.enderman.minecraft.plugins.blockwarriors.managers.ArenaManager;
 import dev.enderman.minecraft.plugins.blockwarriors.types.Arena;
 import dev.enderman.minecraft.plugins.blockwarriors.utility.ConfigurationUtility;

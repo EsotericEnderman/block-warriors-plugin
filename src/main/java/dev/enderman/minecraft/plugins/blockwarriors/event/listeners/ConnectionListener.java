@@ -1,4 +1,4 @@
-package dev.enderman.minecraft.plugins.blockwarriors.events.listeners;
+package dev.enderman.minecraft.plugins.blockwarriors.event.listeners;
 
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

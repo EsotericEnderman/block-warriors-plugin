@@ -1,4 +1,4 @@
-package dev.enderman.minecraft.plugins.blockwarriors.games.king_of_the_hill;
+package dev.enderman.minecraft.plugins.blockwarriors.games.kingofthehill;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

@@ -1,4 +1,4 @@
-package dev.enderman.minecraft.plugins.blockwarriors.games.block_muncher.kits;
+package dev.enderman.minecraft.plugins.blockwarriors.games.blockmuncher.kits;
 
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -14,19 +14,20 @@ import dev.enderman.minecraft.plugins.blockwarriors.BlockWarriorsPlugin;
 import dev.enderman.minecraft.plugins.blockwarriors.enums.KitType;
 import dev.enderman.minecraft.plugins.blockwarriors.types.AbstractKit;
 
-public final class VoleKit extends AbstractKit {
-	public VoleKit(@NotNull final BlockWarriorsPlugin plugin, @NotNull final Player kitUser) {
-		super(plugin, KitType.VOLE, kitUser);
+public final class MoleKit extends AbstractKit {
+
+	public MoleKit(@NotNull final BlockWarriorsPlugin plugin, @NotNull Player kitUser) {
+		super(plugin, KitType.MOLE, kitUser);
 	}
 
 	@Override
 	public void activateKit(@NotNull final Player player) {
-		player.addPotionEffect(new PotionEffect(PotionEffectType.HASTE, 250, 0, true, true, true));
+		player.addPotionEffect(new PotionEffect(PotionEffectType.SPEED, 250, 2, true, true, true));
 	}
 
 	@Override
 	public void giveItems(@NotNull Player player) {
-		player.getInventory().addItem(new ItemStack(Material.IRON_SHOVEL));
+		player.getInventory().addItem(new ItemStack(Material.GOLDEN_PICKAXE));
 	}
 
 	@EventHandler
@@ -34,8 +35,7 @@ public final class VoleKit extends AbstractKit {
 		final Player player = event.getPlayer();
 
 		if (kitUser.equals(player.getUniqueId())) {
-			player.playSound(player, Sound.ENTITY_PLAYER_BURP, 1, 2);
-			player.playSound(player, Sound.BLOCK_GRASS_BREAK, 1, 2);
+			player.playSound(player, Sound.BLOCK_STONE_BREAK, 1, 2);
 		}
 	}
 }
