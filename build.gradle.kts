@@ -80,6 +80,6 @@ bukkitPluginYaml {
 
   version = project.version.toString()
   apiVersion = paperApiVersion
-  main = "${project.group}.minecraft.plugins.blockwarriors"
+  main = "${project.group}.minecraft.plugins.blockwarriors.${name}Plugin"
   load = BukkitPluginYaml.PluginLoadOrder.POSTWORLD
 }
