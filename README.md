@@ -1,5 +1,7 @@
 # Block Warriors Plugin
 
+[![Project Status: Completed](./assets/images/badges/status.svg)](./)
+
 > A collection of fun Minecraft minigames.
 
 ## License
